@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="contact">
+        <form onsubmit="sendEmail(); reset(); return false " >
+            <h3>Get In Touch</h3>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="text" id="email" placeholder="Your Email" required>
+            <input type="text" id="phone" placeholder="Your Phone Number" required>
+            <textarea id="message"  rows="4" placeholder="How Can I Help You ?"></textarea>
+            <button type="submit">Send</button>
+        </form>
+        
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+    SecureToken: "64273b9a-641f-4de4-865e-4e9525a8f2b3",
+    To : '2206283@kiit.ac.in',
+    From : document.getElementById("email").value,
+    Subject : "New Contact For Enquiry",
+    Body : "Name :" + document.getElementById("name").value
+    + "<br> Email :" + document.getElementById("email").value
+    + "<br> Phone No. " + document.getElementById("phone").value
+    + "<br> Message: " + document.getElementById("message").value 
+}).then(
+  message => alert("Message Sent Succesfully")
+);
+        }
+    </script>
+<div class="icon">
+    <a href="https://www.instagram.com/susprynx/">
+        <i class="fa-brands fa-instagram "></i>
+    </a>
+    <a href="https://www.linkedin.com/in/priyanshu-poddar-133609246/">
+        <i class="fa-brands fa-linkedin "></i>
+    </a>
+    <a href="https://github.com/pr1ynsu">
+        <i class="fa-brands fa-github "></i>
+    </a>
+</div>
+<div class="footer">
+    <p>copyright &copy:2023 ; <span class="designer">Priyanshu Poddar</span> </p>
+</div>
+    
+</body>
+</html>
