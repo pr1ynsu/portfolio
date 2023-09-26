@@ -77,7 +77,7 @@ nav ul li a{
 }
 .video{
     position: absolute;
-    right: 0;
+    left: 0;
     bottom: 0;
     
 
@@ -96,15 +96,15 @@ nav ul li a{
     color: transparent;
     
 }
- /* @media (min-aspect-ratio:16/9 ){
+ @media (min-aspect-ratio:16/9 ){
     .video{
         width: 100%;
         height: auto;
         }
 }
-@media (min-aspect-ratio:16/9 ){
+@media (min-aspect-ratio: ){
     .video{
         width: auto;
         height: 100%;
         }
-}  */
+} 
