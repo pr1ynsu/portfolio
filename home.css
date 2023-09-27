@@ -89,11 +89,12 @@ nav ul li a{
     
 }
 .about{
+    
     position: relative;
     text-align: center;
-    padding: 80px;
+    padding: 90px;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 500px;
     color: white;
 }
 .about:hover{
