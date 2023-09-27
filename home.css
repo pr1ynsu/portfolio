@@ -32,8 +32,8 @@ nav{
 
 }
 nav :hover{
-/*     color: blueviolet; */
-/*     transition: 0.5s; */
+   color: pink;
+ transition: 0.5s;
 /*     font-weight: 800; */
     --p: 100%;
     --t: .3s;
