@@ -8,7 +8,7 @@
 .home{
     width: 100%;
     height: 100vh;
-    background: blueviolet;
+   background-image: linear-gradient(black, pink);
     position: relative;
     padding: 0 5%;
     display: flex;
@@ -25,11 +25,18 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+     background: 
+    linear-gradient(#1095c1 0 0) no-repeat
+    var(--p, 200%) 100% / 200% var(--p, .08em);
+  transition: .3s var(--t, 0s), background-position .3s calc(.3s - var(--t, 0s));
+
 }
 nav :hover{
     color: blueviolet;
     transition: 0.5s;
     font-weight: 800;
+    --p: 100%;
+    --t: .3s;
 }
 nav .logo{
     width: 80px;
@@ -75,12 +82,11 @@ nav ul li a{
 
 
 }
-.video{
+/* .video{
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 0; */
     
-
 }
 .about{
     position: relative;
@@ -96,7 +102,7 @@ nav ul li a{
     color: transparent;
     
 }
- @media (min-aspect-ratio:16/9 ){
+/*  @media (min-aspect-ratio:16/9 ){
     .video{
         width: 100%;
         height: auto;
@@ -107,4 +113,4 @@ nav ul li a{
         width: auto;
         height: 100%;
         }
-} 
+}  */
